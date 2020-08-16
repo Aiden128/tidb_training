@@ -1,8 +1,4 @@
-------
-
-------
-
-# [High Performance TiDB] Week 01：TiDB 整体架构
+# [High Performance TiDB]_Week 01：TiDB 整体架构
 
 本週心得：
 
@@ -31,9 +27,12 @@
 
 - TiDB：計算層，負責處理 SQL 解譯成對應 TiKV 使用，當然實際上處理沒有這麼簡單，如何將單一 SQL 指令轉譯成分散式 KV 處理架構是需要很多最佳化的，詳細概念可以參考：https://pingcap.com/blog-cn/tidb-internal-2/
 - TiKV：儲存層，負責實際進行資料的儲存，是一個分散式的 Key/Value 服務，詳細概念可以參考：https://pingcap.com/blog-cn/tidb-internal-1/
-- PD：調度層（我自己稱為保母層），負責對各個元件進行監看、修復、負載平衡等工作，一樣可以參考：https://pingcap.com/blog-cn/tidb-internal-3/
+- PD：調度層（我自己稱為保母層），負責對各個元件進行監看、修復、負載平衡等工作，一樣可以參考：https://pingcap.com/blog-cn/tidb-internal-3/  
+  
+  
 
-再來進行編譯前的環境準備，我是在 Server 上編譯不是在本地端，用的是 ubuntu 18.04 的環境，首先
+
+再來進行編譯前的環境準備，我是在 Server 上編譯不是在本地端，用的是 ubuntu 18.04 的環境，步驟如下：
 
 1. 安裝 make
 
@@ -57,7 +56,7 @@ export PATH=$GOROOT/bin:$PATH
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-或是可以安裝 cargo。環境都設定好了之後，再找到三個相對應的 repository如下：
+（因為對 Rust 不太熟，好像也可以安裝 cargo）。環境都設定好了之後，再找到三個相對應的 repository如下：
 
 ```
 git clone https://github.com/pingcap/tidb
@@ -65,9 +64,8 @@ git clone https://github.com/tikv/tikv
 git clone https://github.com/pingcap/pd
 ```
 
-順利 clone 完之後，會看到三個資料夾分別是 tidb, tikv, pd。
-
-
+順利 clone 完之後，會看到三個資料夾分別是 tidb, tikv, pd。  
+  
 
 ### TiDB
 
@@ -78,7 +76,8 @@ cd tidb
 make
 ```
 
-順利的話可以看到在 bin 目錄下會有一個 tidb-server 
+順利的話可以看到在 bin 目錄下會有一個 tidb-server  
+
 
 ### TiKV
 
@@ -87,25 +86,23 @@ cd tikv
 make build
 ```
 
-應該可以在 ./tikv/target/debug/ 找到兩個 tikv-server 與 tikv-ctl 文件。
+應該可以在 ./tikv/target/debug/ 找到兩個 tikv-server 與 tikv-ctl 文件。  
+
 
 ### PD
 
-在安装好TiDB编译所需go环境后，PD无需多余的环境配置即可编译。
-
-在根目录执行以下命令：
+PD 跟 TiDB 一樣都是透過 GO 編譯，因此直接執行：
 
 ```
 cd pd
 make
 ```
 
-應該可以在 ./pd/bin/ 找到兩個 pd-server 和 pd-ctl 檔案。
+應該可以在 ./pd/bin/ 找到兩個 pd-server 和 pd-ctl 檔案。  
 
 
 
-## 開始佈署
-
+## 開始佈署  
 ### Deploy PD 
 
 TiKV 原生需要是透過 cluster 的方式運作，其中擔任 cluster 的管理者（保母）角色的就是PD，因此要先啓動 PD
@@ -118,9 +115,7 @@ TiKV 原生需要是透過 cluster 的方式運作，其中擔任 cluster 的管
             --initial-cluster="pd-master=http://127.0.0.1:2380" \
             --log-file=pd-master.log
 ```
-
-
-
+  
 ### Deploy TiKV 
 
 啟動三台 TiKV Server（記得要使用不同的 port），並連結到 PD Server 上：
@@ -141,17 +136,13 @@ TiKV 原生需要是透過 cluster 的方式運作，其中擔任 cluster 的管
                 --data-dir=tikv3 \
                 --log-file=tikv3.log
 ```
-
-
-
+  
 透過 pd-ctl 確認整體 tikv 狀態：
 
 ```
 ./bin/pd-ctl store -u http://127.0.0.1:2379
 ```
-
-
-
+  
 如果成功會輸出以下訊息：
 
 ```
@@ -250,14 +241,14 @@ TiKV 原生需要是透過 cluster 的方式運作，其中擔任 cluster 的管
 ```
 
 如果內容正確，表示 TiKV 已經正確連接，也可以看到 state_name 都是 up。
-
-
+  
+  
 
 ### Deploy TiDB
 
 TiDB 佈署非常簡單，只要指定 PD 位址就好，執行：
 
-（TODO：確認一下 pd 怎麼 HA）
+（TODO：確認一下 pd 怎麼 HA ?）
 
 ```
 ./bin/tidb-server --store=tikv \
@@ -329,7 +320,7 @@ mysql> select * from information_schema.cluster_info;
 
 根據角色負責的工作，TiDB 負責解譯跟編譯 SQL，也就是每次 SQL 語法的 flow 的開始跟結束點都是要透過 TiDB，因此可以先合理判斷 TiDB 中應該有對應的接口，到官方文件中搜尋一下，可以找到 [TiDB事务概览](https://docs.pingcap.com/zh/tidb/stable/transaction-overview)，應該是八九不離十，再搜尋一下 Code 可以發現 `tidb/kv/kv.go`中有宣告 Transaction 的 interface，主要是定義在 Storage 中：
 
-```
+```go
 // Storage defines the interface for storage.
 // Isolation should be at least SI(SNAPSHOT ISOLATION)
 type Storage interface {
@@ -389,13 +380,9 @@ func newTikvTxnWithStartTS(store tikvStore, startTS uint64, replicaReadSeed uint
     vars:      kv.DefaultVars,
   }, nil
 }
-```
-
-
-
-可以發現最後都匯到 `func newTikvTxnWithStartTS(store *tikvStore, startTS uint64, replicaReadSeed uint32) (*tikvTxn, error)` 所以直接在這個 fun 加上 log 即可。
-
-改写如下：
+```  
+  
+可以發現最後都會到 `func newTikvTxnWithStartTS(store *tikvStore, startTS uint64, replicaReadSeed uint32) (*tikvTxn, error)` 所以直接在這個 fun 加上 log 即可。  
 
 ```
 // newTikvTxnWithStartTS creates a txn with startTS.
