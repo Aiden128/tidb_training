@@ -1,4 +1,7 @@
-# # [High Performance TiDB]_Week 02：TiDB 整体架构
+# # [High Performance TiDB]_Week 02：对 TiDB 进行基准测试
+
+## 課前學習資料筆記
+
 
 Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
@@ -144,6 +147,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwODU0OTQxNCwtMjEwNzYzMjgzLC0yNT
-Y1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1Nj
+UyMDYwMF19
 -->
