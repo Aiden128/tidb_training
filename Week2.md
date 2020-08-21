@@ -36,7 +36,7 @@ ssh_authorized_keys:
   - ssh-rsa AAAAB3.......hh32R ruan@mbp
 ```
 - 製作 VM 
-- 先 login ㄧh4
+- 先 login 一次加入 host 
     
 
 
@@ -207,8 +207,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjIxMTExLC0xMjQ1NTk4NDMsMjYzNj
-YxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1
-MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNT
-Y1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbMTc1Mzk0OTA4NiwtMTI0NTU5ODQzLDI2Mz
+Y2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3MTUwLDE3MTIwMjU5
+NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLTIxMDc2MzI4MywtMj
+U2NTIwNjAwXX0=
 -->
