@@ -24,7 +24,7 @@
 ## 背景與環境準備
 
 ### 虛擬機準備
-這次使用的是 multipass 來準備虛擬環境（可以參考 [Multipass 介紹](https://sysadmins.co.za/getting-started-with-multipass-vms/)），因為 tiup 進行主機操作時可選擇用 key 或是密碼登入，同時該帳號要具備 root 權限，因此先準備 ssh private key，再用 cloud-init 的方式宣告。
+這次使用的是 multipass 來準備虛擬環境（可以參考 [Multipass 介紹](https://sysadmins.co.za/getting-started-with-multipass-vms/)），因為 tiup 進行主機操作時可選擇用 key 或是密碼登入，同時該帳號要具備 root 權限，因此先準備 ssh private key，再用 cloud-init 的方式設定 multipass VM。
 
 - 產生 key：
     ssh-keygen -b 2048 -f ~/.ssh/multipass -t rsa -q -N ""
@@ -35,7 +35,7 @@ $ cat ./cloud-init.yaml
 ssh_authorized_keys:
   - ssh-rsa AAAAB3.......hh32R ruan@mbp
 ```
-- 製作 VM 
+- 生成 VM 
 
 ## 作業
 ### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
@@ -267,8 +267,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzU1MjcsLTM4Nzc3NjQ1MiwxNzUzOT
-Q5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUs
-LTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NT
-IxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbOTE5MzY2NTg0LC0zODc3NzY0NTIsMTc1Mz
+k0OTA4NiwtMTI0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1
+LC0xNjY0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5Nz
+UyMTYxNjIsLTIxMDc2MzI4MywtMjU2NTIwNjAwXX0=
 -->
