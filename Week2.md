@@ -32,10 +32,10 @@
 
  1. 使用 TiUP 部署 TiDB 集群(https://docs.pingcap.com/zh/tidb/stable/production-deployment-using-tiup)
 - 文件中有說明不同的拓譜架構，科普一下幾個提到元件：
-	- TiFlash
-	- TiCDC
-	- TiDB Binlog
-	- TiSpark
+	- **TiFlash**：列存副本通过 Raft Learner 协议异步复制，但是在读取的时候通过 Raft 校对索引配合 MVCC 的方式获得 Snapshot Isolation 的一致性隔离级别
+	- **TiCDC**：[TiCDC](https://github.com/pingcap/ticdc) 是一款通过拉取 TiKV 变更日志实现的 TiDB 增量数据同步工具，具有将数据还原到与上游任意 TSO 一致状态的能力，同时提供[开放数据协议](https://docs.pingcap.com/zh/tidb/dev/ticdc-open-protocol) (TiCDC Open Protocol)，支持其他系统订阅数据变更。
+	- **TiDB Binlog**：
+	- **TiSpark**：
 
 
  2. TiKV 线程池优化(https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter8/threadpool-optimize.md)
@@ -187,7 +187,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDE5MTM5NCwxNTUyNzI3Nzk1LC0xNj
-Y0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYx
-NjIsLTIxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbODQxMTU2MzM4LDE1NTI3Mjc3OTUsLTE2Nj
+Q3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2
+MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
