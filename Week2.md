@@ -24,7 +24,7 @@
 ## 背景與環境準備
 
 ### 虛擬機準備
-使用的是 multipass 來準備虛擬環境，可以參考 [Multipass 介紹](https://sysadmins.co.za/getting-started-with-multipass-vms/)，因為 tiup 需要可用免 key 或是密碼登入，而且該帳號要具備 root 權限，因此先準備 ssh private key，再用 cloud-init 的方式宣告。
+這次使用的是 multipass 來準備虛擬環境（可以參考 [Multipass 介紹](https://sysadmins.co.za/getting-started-with-multipass-vms/)），因為 tiup 進行主機操作時可選擇用 key 或是密碼登入，同時該帳號要具備 root 權限，因此先準備 ssh private key，再用 cloud-init 的方式宣告。
 
 - 產生 key：
     ssh-keygen -b 2048 -f ~/.ssh/multipass -t rsa -q -N ""
@@ -267,8 +267,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMj
-Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
-NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
-EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbMTk0NzU1MjcsLTM4Nzc3NjQ1MiwxNzUzOT
+Q5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUs
+LTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NT
+IxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
