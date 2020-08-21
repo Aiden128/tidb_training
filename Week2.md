@@ -31,6 +31,11 @@
 ## 課前學習資料筆記
 
  1. 使用 TiUP 部署 TiDB 集群(https://docs.pingcap.com/zh/tidb/stable/production-deployment-using-tiup)
+- 文件中有說明不同的拓譜架構，說明一下可能的情境：
+	- TiFlash
+	- TiCDC
+	- TiDB Binlog
+	- Ti
 
 
  2. TiKV 线程池优化(https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter8/threadpool-optimize.md)
@@ -182,7 +187,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwNDc5MTA5LDE1NTI3Mjc3OTUsLTE2Nj
-Q3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2
-MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbMTg2MDM1NTAzMiwxNTUyNzI3Nzk1LC0xNj
+Y0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYx
+NjIsLTIxMDc2MzI4MywtMjU2NTIwNjAwXX0=
 -->
