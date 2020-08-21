@@ -43,9 +43,9 @@ ssh_authorized_keys:
 |实例 | 个数 | 物理机配置 | IP |配置 |
 | :-- | :-- | :-- | :-- | :-- |
 | TiDB |3 | 16 VCore 24GB * 1 | 10.149.251.103 <br/> 10.149.251.81 <br/> 10.149.251.67 | 默认端口 <br/>  全局目录配置 |
-| PD | 3 | 4 VCore 8GB * 1 |10.149.251.27 <br/> 10.149.251.46 <br/> 10.0.1.6 | 默认端口 <br/> 全局目录配置 |
-| TiKV | 3 | 16 VCore 32GB 2TB (nvme ssd) * 1 | 10.0.1.7 <br/> 10.0.1.8 <br/> 10.0.1.9 | 默认端口 <br/> 全局目录配置 |
-| Monitoring & Grafana | 1 | 4 VCore 8GB * 1 500GB (ssd) | 10.0.1.11 | 默认端口 <br/> 全局目录配置 |
+| PD | 3 | 4 VCore 8GB * 1 |10.149.251.27 <br/> 10.149.251.46 <br/> 10.149.251.241| 默认端口 <br/> 全局目录配置 |
+| TiKV | 3 | 16 VCore 24 GB | 10.149.251.142 <br/> 10.149.251.123 <br/> 10.149.251.53 | 默认端口 <br/> 全局目录配置 |
+| Monitoring & Grafana | 1 | 4 VCore 8GB * 1  | 10.149.251.168 | 默认端口 <br/> 全局目录配置 |
 
 不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
 
@@ -245,7 +245,7 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTg4MTk3OCwxNzUzOTQ5MDg2LC0xMj
+eyJoaXN0b3J5IjpbLTkyNjQyNTIzMiwxNzUzOTQ5MDg2LC0xMj
 Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
 NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
 EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
