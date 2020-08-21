@@ -35,6 +35,8 @@ $ cat ./cloud-init.yaml
 ssh_authorized_keys:
   - ssh-rsa AAAAB3.......hh32R ruan@mbp
 ```
+- 製作 VM 
+- 先 login ㄧh4
     
 
 
@@ -205,7 +207,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU1OTg0MywyNjM2NjExODEsMTU1Mj
-cyNzc5NSwtMTY2NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1
-MTcsOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbMjEwNjIxMTExLC0xMjQ1NTk4NDMsMjYzNj
+YxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1
+MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNT
+Y1MjA2MDBdfQ==
 -->
