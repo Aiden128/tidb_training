@@ -23,6 +23,9 @@
 
 ## 背景與環境準備
 
+### 虛擬機準備
+使用的是 multipass 來準備虛擬環境，可以參考
+
 ## 作業準備
 ### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
@@ -189,7 +192,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNDEwODEsMjYzNjYxMTgxLDE1NTI3Mj
-c3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3
-LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbLTEyOTYwNTU4NjgsMjYzNjYxMTgxLDE1NT
+I3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0
+NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ
+==
 -->
