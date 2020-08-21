@@ -43,8 +43,7 @@ ssh_authorized_keys:
 不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
 
  - 最小拓譜架構
-
-''
+``
 global:
   user: "tidb"
   ssh_port: 22
@@ -239,8 +238,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjYxMzM1NTgsMTc1Mzk0OTA4NiwtMT
-I0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3
-MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLT
-IxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbLTk3MjMxMzcwNCwxNzUzOTQ5MDg2LC0xMj
+Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
+NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
+EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
