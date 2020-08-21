@@ -44,37 +44,36 @@ ssh_authorized_keys:
 
  - 最小拓譜架構
 
-  Global variables are applied to all deployments and used as the default value of
-  the deployments if a specific deployment value is missing.
-    global:
-      user: "tidb"
-      ssh_port: 22
-      deploy_dir: "/tidb-deploy"
-      data_dir: "/tidb-data"
-    
-    pd_servers:
-      - host: 10.149.251.27
-      - host: 10.149.251.46
-      - host: 10.149.251.241
-    
-    tidb_servers:
-      - host: 10.149.251.103
-      - host: 10.149.251.81
-      - host: 10.149.251.67
-    
-    tikv_servers:
-      - host: 10.149.251.142
-      - host: 10.149.251.123
-      - host: 10.149.251.53
-    
-    monitoring_servers:
-      - host: 10.149.251.168
-    
-    grafana_servers:
-      - host: 10.149.251.168
-    
-    alertmanager_servers:
-      - host: 10.149.251.168
+''
+global:
+  user: "tidb"
+  ssh_port: 22
+  deploy_dir: "/tidb-deploy"
+  data_dir: "/tidb-data"
+
+pd_servers:
+  - host: 10.149.251.27
+  - host: 10.149.251.46
+  - host: 10.149.251.241
+
+tidb_servers:
+  - host: 10.149.251.103
+  - host: 10.149.251.81
+  - host: 10.149.251.67
+
+tikv_servers:
+  - host: 10.149.251.142
+  - host: 10.149.251.123
+  - host: 10.149.251.53
+
+monitoring_servers:
+  - host: 10.149.251.168
+
+grafana_servers:
+  - host: 10.149.251.168
+
+alertmanager_servers:
+  - host: 10.149.251.168
 
 
 
@@ -240,8 +239,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyMDk2MjMwLDE3NTM5NDkwODYsLTEyND
-U1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1
-MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMT
-A3NjMyODMsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbLTExNjYxMzM1NTgsMTc1Mzk0OTA4NiwtMT
+I0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3
+MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLT
+IxMDc2MzI4MywtMjU2NTIwNjAwXX0=
 -->
