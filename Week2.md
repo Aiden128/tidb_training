@@ -40,7 +40,42 @@ ssh_authorized_keys:
 ## 作業準備
 ### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
-不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。
+不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
+
+ - 最小拓譜架構
+
+  Global variables are applied to all deployments and used as the default value of
+  the deployments if a specific deployment value is missing.
+    global:
+      user: "tidb"
+      ssh_port: 22
+      deploy_dir: "/tidb-deploy"
+      data_dir: "/tidb-data"
+    
+    pd_servers:
+      - host: 10.149.251.27
+      - host: 10.149.251.46
+      - host: 10.149.251.241
+    
+    tidb_servers:
+      - host: 10.149.251.103
+      - host: 10.149.251.81
+      - host: 10.149.251.67
+    
+    tikv_servers:
+      - host: 10.149.251.142
+      - host: 10.149.251.123
+      - host: 10.149.251.53
+    
+    monitoring_servers:
+      - host: 10.149.251.168
+    
+    grafana_servers:
+      - host: 10.149.251.168
+    
+    alertmanager_servers:
+      - host: 10.149.251.168
+
 
 
 ## 延伸學習
@@ -205,8 +240,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDczNjE5MzYsMTc1Mzk0OTA4NiwtMT
-I0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3
-MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLT
-IxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbODEyMDk2MjMwLDE3NTM5NDkwODYsLTEyND
+U1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1
+MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMT
+A3NjMyODMsLTI1NjUyMDYwMF19
 -->
