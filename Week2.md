@@ -1,5 +1,10 @@
 # # [High Performance TiDB]_Week 02：对 TiDB 进行基准测试
 
+本週心得：
+
+## 題目要求
+
+
 ## 課前學習資料筆記
 
  1. 使用 TiUP 部署 TiDB 集群(https://docs.pingcap.com/zh/tidb/stable/production-deployment-using-tiup)
@@ -153,6 +158,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDIwNzM0MSwxMjUxNzY0NTE3LDk3NT
+eyJoaXN0b3J5IjpbMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NT
 IxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
