@@ -37,11 +37,10 @@ ssh_authorized_keys:
 ```
 - 製作 VM 
 
-    
-
-
 ## 作業準備
 ### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
+
+不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好執行 tiup 
 
 
 
@@ -207,8 +206,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTMzNDQ0MTgsMTc1Mzk0OTA4NiwtMT
-I0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3
-MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLT
-IxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbLTY5NDcxNjUzMywxNzUzOTQ5MDg2LC0xMj
+Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
+NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
+EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
