@@ -34,8 +34,8 @@
 - 文件中有說明不同的拓譜架構，科普一下幾個提到元件：
 	- **TiFlash**：列存副本通过 Raft Learner 协议异步复制，但是在读取的时候通过 Raft 校对索引配合 MVCC 的方式获得 Snapshot Isolation 的一致性隔离级别
 	- **TiCDC**：[TiCDC](https://github.com/pingcap/ticdc) 是一款通过拉取 TiKV 变更日志实现的 TiDB 增量数据同步工具，具有将数据还原到与上游任意 TSO 一致状态的能力，同时提供[开放数据协议](https://docs.pingcap.com/zh/tidb/dev/ticdc-open-protocol) (TiCDC Open Protocol)，支持其他系统订阅数据变更。
-	- **TiDB Binlog**：
-	- **TiSpark**：
+	- **TiDB Binlog**：TiDB Binlog 是一个用于收集 TiDB 的 binlog，并提供准实时备份和同步功能的商业工具。
+	- **TiSpark**：TiSpark 是 PingCAP 为解决用户复杂 OLAP 需求而推出的产品。它借助 Spark 平台，同时融合 TiKV 分布式集群的优势，和 TiDB 一起为用户一站式解决 HTAP (Hybrid Transactional/Analytical Processing) 的需求。
 
 
  2. TiKV 线程池优化(https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter8/threadpool-optimize.md)
@@ -187,7 +187,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxMTU2MzM4LDE1NTI3Mjc3OTUsLTE2Nj
+eyJoaXN0b3J5IjpbMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2Nj
 Q3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2
 MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
