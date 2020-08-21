@@ -82,6 +82,7 @@ alertmanager_servers:
   - host: 10.149.251.168
 ```
 
+使用 tidb 安裝結果如下：
 
 ## 延伸學習
 
@@ -245,8 +246,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjQyNTIzMiwxNzUzOTQ5MDg2LC0xMj
-Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
-NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
-EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbNzE0NjEwMzc5LDE3NTM5NDkwODYsLTEyND
+U1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1
+MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMT
+A3NjMyODMsLTI1NjUyMDYwMF19
 -->
