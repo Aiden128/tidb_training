@@ -32,6 +32,7 @@
 
  1. 使用 TiUP 部署 TiDB 集群(https://docs.pingcap.com/zh/tidb/stable/production-deployment-using-tiup)
 
+
  2. TiKV 线程池优化(https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter8/threadpool-optimize.md)
  3. PD Dashboard 说明(https://docs.pingcap.com/zh/tidb/stable/dashboard-intro)
  4. TPCC 背景知识](https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter3/tpc-c.md)
@@ -181,7 +182,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNz
-EyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMy
-ODMsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbOTYwNDc5MTA5LDE1NTI3Mjc3OTUsLTE2Nj
+Q3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2
+MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
