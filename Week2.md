@@ -82,7 +82,10 @@ alertmanager_servers:
   - host: 10.149.251.168
 ```
 
-使用 tidb 安裝結果如下：
+- 檢查安裝結果
+tiup cluster display cluster-test
+
+
 
 ## 延伸學習
 
@@ -246,8 +249,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0NjEwMzc5LDE3NTM5NDkwODYsLTEyND
-U1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1
-MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMT
-A3NjMyODMsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbLTEzMDUwMzk1NjcsMTc1Mzk0OTA4NiwtMT
+I0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3
+MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLT
+IxMDc2MzI4MywtMjU2NTIwNjAwXX0=
 -->
