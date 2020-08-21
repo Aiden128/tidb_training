@@ -85,7 +85,25 @@ alertmanager_servers:
 - 檢查安裝結果
 tiup cluster display cluster-test
 
-
+```
+Starting component `cluster`:  display tidb-test
+tidb Cluster: tidb-test
+tidb Version: v4.0.0
+ID                    Role          Host            Ports        OS/Arch       Status  Data Dir                      Deploy Dir
+--                    ----          ----            -----        -------       ------  --------                      ----------
+10.149.251.168:9093   alertmanager  10.149.251.168  9093/9094    linux/x86_64  Up      /tidb-data/alertmanager-9093  /tidb-deploy/alertmanager-9093
+10.149.251.168:3000   grafana       10.149.251.168  3000         linux/x86_64  Up      -                             /tidb-deploy/grafana-3000
+10.149.251.241:2379   pd            10.149.251.241  2379/2380    linux/x86_64  Up|UI   /tidb-data/pd-2379            /tidb-deploy/pd-2379
+10.149.251.27:2379    pd            10.149.251.27   2379/2380    linux/x86_64  Up      /tidb-data/pd-2379            /tidb-deploy/pd-2379
+10.149.251.46:2379    pd            10.149.251.46   2379/2380    linux/x86_64  Up|L    /tidb-data/pd-2379            /tidb-deploy/pd-2379
+10.149.251.168:9090   prometheus    10.149.251.168  9090         linux/x86_64  Up      /tidb-data/prometheus-9090    /tidb-deploy/prometheus-9090
+10.149.251.103:4000   tidb          10.149.251.103  4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
+10.149.251.67:4000    tidb          10.149.251.67   4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
+10.149.251.81:4000    tidb          10.149.251.81   4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
+10.149.251.123:20160  tikv          10.149.251.123  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+10.149.251.142:20160  tikv          10.149.251.142  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+10.149.251.53:20160   tikv          10.149.251.53   20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+```
 
 ## 延伸學習
 
@@ -249,8 +267,8 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDUwMzk1NjcsMTc1Mzk0OTA4NiwtMT
-I0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3
-MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLT
-IxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMj
+Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
+NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
+EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
