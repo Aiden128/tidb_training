@@ -37,13 +37,13 @@ ssh_authorized_keys:
 ```
 - 製作 VM 
 
-## 作業準備
+## 作業
 ### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
 不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
 
  - 最小拓譜架構
-``
+```
 global:
   user: "tidb"
   ssh_port: 22
@@ -73,7 +73,7 @@ grafana_servers:
 
 alertmanager_servers:
   - host: 10.149.251.168
-
+```
 
 
 ## 延伸學習
@@ -238,7 +238,7 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjMxMzcwNCwxNzUzOTQ5MDg2LC0xMj
+eyJoaXN0b3J5IjpbMTUwNDk4NzE3NSwxNzUzOTQ5MDg2LC0xMj
 Q1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcx
 NTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMj
 EwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
