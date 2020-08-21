@@ -21,6 +21,13 @@
 截止时间：下周二（8.25）24:00:00(逾期提交不给分)
 ```
 
+## 背景與環境準備
+
+## 作業準備
+### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
+
+## 延伸學習
+
 ## 課前學習資料筆記
 
  1. 使用 TiUP 部署 TiDB 集群(https://docs.pingcap.com/zh/tidb/stable/production-deployment-using-tiup)
@@ -174,7 +181,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMj
-UxNzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2
-MDBdfQ==
+eyJoaXN0b3J5IjpbMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNz
+EyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMy
+ODMsLTI1NjUyMDYwMF19
 -->
