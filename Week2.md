@@ -2,6 +2,15 @@
 
 ## 課前學習資料筆記
 
+ 1. 使用 TiUP 部署 TiDB 集群(https://docs.pingcap.com/zh/tidb/stable/production-deployment-using-tiup)
+ 2. TiKV 线程池优化(https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter8/threadpool-optimize.md)
+ 3. 3. PD Dashboard 说明](https://docs.pingcap.com/zh/tidb/stable/dashboard-intro)
+    
+    [4. TPCC
+    背景知识](https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter3/tpc-c.md)
+    
+    [5.
+    ycsb,sysbench](https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter3/sysbench.md)
 
 Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
@@ -147,6 +156,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1Nj
-UyMDYwMF19
+eyJoaXN0b3J5IjpbLTExMjA0MDE5MTcsOTc1MjE2MTYyLC0yMT
+A3NjMyODMsLTI1NjUyMDYwMF19
 -->
