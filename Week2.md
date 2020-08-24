@@ -41,9 +41,8 @@ ssh_authorized_keys:
 
 TODO
 
-- 使用 tiup 佈署，不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。我們先次社
+- 使用 tiup 佈署，不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。先測試最小架構：
 
- - 最小拓譜架構
 ```
 global:
   user: "tidb"
@@ -77,9 +76,10 @@ alertmanager_servers:
 ```
 
 - 檢查安裝結果
-tiup cluster display cluster-test
 
 ```
+:~ $  tiup cluster display cluster-test
+
 Starting component `cluster`:  display tidb-test
 tidb Cluster: tidb-test
 tidb Version: v4.0.0
@@ -272,9 +272,9 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NjYzMTEwNiwxNDIxMzcwNjY4LC0xNj
-Y1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkw
-ODYsLTEyNDU1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMT
-Y2NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2
-MTYyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMT
+Y2NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5
+MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLT
+E2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIx
+NjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
 -->
