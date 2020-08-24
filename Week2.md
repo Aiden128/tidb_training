@@ -77,8 +77,9 @@ alertmanager_servers:
 - 執行安裝
 
 ```shell
-tiup cluster deploy tidb-test v4.0.0 ./topology.yaml --user ubuntu -i ~/.ssh/id_rsa.pub
+tiup cluster deploy tidb-test v4.0.0 ./topology.yaml --user ubuntu -i ~/.ssh/id_rsa
 ```
+畫面跳出確認 topology 是否正確，執行 y 
 
 - 檢查安裝結果
 
@@ -277,10 +278,10 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjI1NTc0NjgsLTE3NjE5MTkxODEsMT
-QyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3
-NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLD
-E1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUx
-NzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MD
-BdfQ==
+eyJoaXN0b3J5IjpbMjE0NDQxMTMyMywtMTc2MTkxOTE4MSwxND
+IxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2
+NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0MywyNjM2NjExODEsMT
+U1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3
+NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF
+19
 -->
