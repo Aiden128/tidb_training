@@ -51,28 +51,28 @@ global:
   data_dir: "/tidb-data"
 
 pd_servers:
-  - host: 10.149.251.27
-  - host: 10.149.251.46
-  - host: 10.149.251.241
+  - host: 10.149.251.115
+  - host: 10.149.251.137
+  - host: 10.149.251.239
 
 tidb_servers:
-  - host: 10.149.251.103
-  - host: 10.149.251.81
-  - host: 10.149.251.67
+  - host: 10.149.251.121
+  - host: 10.149.251.223
+  - host: 10.149.251.140
 
 tikv_servers:
-  - host: 10.149.251.142
-  - host: 10.149.251.123
-  - host: 10.149.251.53
+  - host: 10.149.251.15
+  - host: 10.149.251.214
+  - host: 10.149.251.173
 
 monitoring_servers:
-  - host: 10.149.251.168
+  - host: 10.149.251.56
 
 grafana_servers:
-  - host: 10.149.251.168
+  - host: 10.149.251.56
 
 alertmanager_servers:
-  - host: 10.149.251.168
+  - host: 10.149.251.56
 ```
 - 執行安裝
 
@@ -91,18 +91,19 @@ tidb Cluster: tidb-test
 tidb Version: v4.0.0
 ID                    Role          Host            Ports        OS/Arch       Status  Data Dir                      Deploy Dir
 --                    ----          ----            -----        -------       ------  --------                      ----------
-10.149.251.168:9093   alertmanager  10.149.251.168  9093/9094    linux/x86_64  Up      /tidb-data/alertmanager-9093  /tidb-deploy/alertmanager-9093
-10.149.251.168:3000   grafana       10.149.251.168  3000         linux/x86_64  Up      -                             /tidb-deploy/grafana-3000
-10.149.251.241:2379   pd            10.149.251.241  2379/2380    linux/x86_64  Up|UI   /tidb-data/pd-2379            /tidb-deploy/pd-2379
-10.149.251.27:2379    pd            10.149.251.27   2379/2380    linux/x86_64  Up      /tidb-data/pd-2379            /tidb-deploy/pd-2379
-10.149.251.46:2379    pd            10.149.251.46   2379/2380    linux/x86_64  Up|L    /tidb-data/pd-2379            /tidb-deploy/pd-2379
-10.149.251.168:9090   prometheus    10.149.251.168  9090         linux/x86_64  Up      /tidb-data/prometheus-9090    /tidb-deploy/prometheus-9090
-10.149.251.103:4000   tidb          10.149.251.103  4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
-10.149.251.67:4000    tidb          10.149.251.67   4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
-10.149.251.81:4000    tidb          10.149.251.81   4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
-10.149.251.123:20160  tikv          10.149.251.123  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
-10.149.251.142:20160  tikv          10.149.251.142  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
-10.149.251.53:20160   tikv          10.149.251.53   20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+10.149.251.56:9093    alertmanager  10.149.251.56   9093/9094    linux/x86_64  Up      /tidb-data/alertmanager-9093  /tidb-deploy/alertmanager-9093
+10.149.251.56:3000    grafana       10.149.251.56   3000         linux/x86_64  Up      -                             /tidb-deploy/grafana-3000
+10.149.251.115:2379   pd            10.149.251.115  2379/2380    linux/x86_64  Up      /tidb-data/pd-2379            /tidb-deploy/pd-2379
+10.149.251.137:2379   pd            10.149.251.137  2379/2380    linux/x86_64  Up|L    /tidb-data/pd-2379            /tidb-deploy/pd-2379
+10.149.251.239:2379   pd            10.149.251.239  2379/2380    linux/x86_64  Up|UI   /tidb-data/pd-2379            /tidb-deploy/pd-2379
+10.149.251.56:9090    prometheus    10.149.251.56   9090         linux/x86_64  Up      /tidb-data/prometheus-9090    /tidb-deploy/prometheus-9090
+10.149.251.121:4000   tidb          10.149.251.121  4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
+10.149.251.140:4000   tidb          10.149.251.140  4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
+10.149.251.223:4000   tidb          10.149.251.223  4000/10080   linux/x86_64  Up      -                             /tidb-deploy/tidb-4000
+10.149.251.15:20160   tikv          10.149.251.15   20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+10.149.251.173:20160  tikv          10.149.251.173  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+10.149.251.214:20160  tikv          10.149.251.214  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+
 ```
 
 ## 測試報告
@@ -278,10 +279,10 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDQxMTMyMywtMTc2MTkxOTE4MSwxND
-IxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2
-NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0MywyNjM2NjExODEsMT
-U1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3
-NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF
-19
+eyJoaXN0b3J5IjpbLTE0MTg3ODkyODQsMjE0NDQxMTMyMywtMT
+c2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2
+NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0My
+wyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEy
+MDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMyOD
+MsLTI1NjUyMDYwMF19
 -->
