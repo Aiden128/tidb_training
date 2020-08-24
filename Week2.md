@@ -37,16 +37,6 @@ ssh_authorized_keys:
 ```
 - 生成 VM 
 
-## 測試報告
-### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
-
-|实例 | 个数 | 物理机配置 | IP
-| :-- | :-- | :-- | :-- | :-- |
-| TiDB |3 | 16 VCore 24GB * 1 | 10.149.251.103 <br/> 10.149.251.81 <br/> 10.149.251.67
-| PD | 3 | 4 VCore 8GB * 1 |10.149.251.27 <br/> 10.149.251.46 <br/> 10.149.251.241
-| TiKV | 3 | 16 VCore 24 GB | 10.149.251.142 <br/> 10.149.251.123 <br/> 10.149.251.53 
-| Monitoring & Grafana | 1 | 4 VCore 8GB * 1  | 10.149.251.168 
-
 不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
 
  - 最小拓譜架構
@@ -103,6 +93,19 @@ ID                    Role          Host            Ports        OS/Arch       S
 10.149.251.123:20160  tikv          10.149.251.123  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
 10.149.251.142:20160  tikv          10.149.251.142  20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
 10.149.251.53:20160   tikv          10.149.251.53   20160/20180  linux/x86_64  Up      /tidb-data/tikv-20160         /tidb-deploy/tikv-20160
+```
+
+## 測試報告
+### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
+
+|实例 | 个数 | 物理机配置 | IP
+| :-- | :-- | :-- | :-- | :-- |
+| TiDB |3 | 16 VCore 24GB * 1 | 10.149.251.103 <br/> 10.149.251.81 <br/> 10.149.251.67
+| PD | 3 | 4 VCore 8GB * 1 |10.149.251.27 <br/> 10.149.251.46 <br/> 10.149.251.241
+| TiKV | 3 | 16 VCore 24 GB | 10.149.251.142 <br/> 10.149.251.123 <br/> 10.149.251.53 
+| Monitoring & Grafana | 1 | 4 VCore 8GB * 1  | 10.149.251.168 
+
+
 ```
 
 ## 延伸學習
@@ -267,7 +270,7 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODY0OTU2ODYsLTE2NjU2NTA1NDUsOT
+eyJoaXN0b3J5IjpbLTIxMDcxMjAxMDAsLTE2NjU2NTA1NDUsOT
 E5MzY2NTg0LC0zODc3NzY0NTIsMTc1Mzk0OTA4NiwtMTI0NTU5
 ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3MTUwLD
 E3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLTIxMDc2
