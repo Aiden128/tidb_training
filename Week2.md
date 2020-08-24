@@ -106,6 +106,14 @@ ID                    Role          Host            Ports        OS/Arch       S
 
 ```
 
+- 確認狀態正常後可以連到 TiDB 進行
+```
+mysql -h 127.0.0.1 -p 4000 -u root
+
+mysql> create database sbtest;
+Query OK, 0 rows affected (2.95 sec)
+```
+
 ## 測試報告
 ### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
@@ -279,10 +287,10 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTg3ODkyODQsMjE0NDQxMTMyMywtMT
-c2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2
-NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0My
-wyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEy
-MDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMyOD
-MsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMj
+E0NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1
+NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwOD
+YsLTEyNDU1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2
+NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MT
+YyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF19
 -->
