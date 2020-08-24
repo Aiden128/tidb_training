@@ -37,10 +37,11 @@ $ cat ./cloud-init.yaml
 ssh_authorized_keys:
   - ssh-rsa AAAAB3.......hh32R ruan@mbp
 ```
-- 生成 VM，依照規格用 script 產生，
-- 
+- 生成 VM，依照規格用 script 產生，配置如下。
 
-不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
+TODO
+
+- 使用 tiup 佈署，不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。我們先次社
 
  - 最小拓譜架構
 ```
@@ -271,9 +272,9 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5NDUxMzYzLDE0MjEzNzA2NjgsLTE2Nj
-U2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIsMTc1Mzk0OTA4
-NiwtMTI0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNj
-Y0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYx
-NjIsLTIxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbMTQ5NjYzMTEwNiwxNDIxMzcwNjY4LC0xNj
+Y1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkw
+ODYsLTEyNDU1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMT
+Y2NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2
+MTYyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF19
 -->
