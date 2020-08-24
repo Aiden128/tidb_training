@@ -106,8 +106,6 @@ ID                    Role          Host            Ports        OS/Arch       S
 | Monitoring & Grafana | 1 | 4 VCore 8GB * 1  | 10.149.251.168 
 
 
-```
-
 ## 延伸學習
 
 ## 課前學習資料筆記
@@ -270,9 +268,9 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDcxMjAxMDAsLTE2NjU2NTA1NDUsOT
-E5MzY2NTg0LC0zODc3NzY0NTIsMTc1Mzk0OTA4NiwtMTI0NTU5
-ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNjY0NzA3MTUwLD
-E3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYxNjIsLTIxMDc2
-MzI4MywtMjU2NTIwNjAwXX0=
+eyJoaXN0b3J5IjpbMTQyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MT
+kzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4
+NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMT
+cxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYz
+MjgzLC0yNTY1MjA2MDBdfQ==
 -->
