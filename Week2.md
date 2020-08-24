@@ -26,16 +26,19 @@
 ### 環境準備
 這次使用的是 multipass 來準備虛擬環境（可以參考 [Multipass 介紹](https://sysadmins.co.za/getting-started-with-multipass-vms/)），因為 tiup 進行主機操作時可選擇用 key 或是密碼登入，同時該帳號要具備 root 權限，因此先準備 ssh private key，再用 cloud-init 的方式設定 multipass VM。
 
-- 產生 key：
+- 產生給 cloud-init 用的 ssh public key：
+```
     ssh-keygen -b 2048 -f ~/.ssh/multipass -t rsa -q -N ""
-- 加入 pubkey 到 cloud-init.yaml
+```
+- 把產生的 pubkey 到 cloud-init.yaml
 ```
 $ cat ./cloud-init.yaml
 #cloud-config
 ssh_authorized_keys:
   - ssh-rsa AAAAB3.......hh32R ruan@mbp
 ```
-- 生成 VM 
+- 生成 VM，依照規格用 script 產生，
+- 
 
 不得不說，使用 tiup 實在沒什麼技術難點，只要將 topology.yaml 準備好進行 tiup 安裝很簡單就可以完成。以下就從六種場景進行佈署測試：
 
@@ -268,9 +271,9 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MT
-kzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4
-NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMT
-cxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYz
-MjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbMjk5NDUxMzYzLDE0MjEzNzA2NjgsLTE2Nj
+U2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIsMTc1Mzk0OTA4
+NiwtMTI0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nzk1LC0xNj
+Y0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5NzUyMTYx
+NjIsLTIxMDc2MzI4MywtMjU2NTIwNjAwXX0=
 -->
