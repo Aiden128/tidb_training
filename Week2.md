@@ -74,6 +74,11 @@ grafana_servers:
 alertmanager_servers:
   - host: 10.149.251.168
 ```
+- 執行安裝
+
+```shell
+tiup cluster deploy tidb-test v4.0.0 ./topology.yaml --user ubuntu -i ~/.ssh/id_rsa.pub
+```
 
 - 檢查安裝結果
 
@@ -272,9 +277,10 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMT
-Y2NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5
-MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLT
-E2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIx
-NjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
+eyJoaXN0b3J5IjpbLTE1MjI1NTc0NjgsLTE3NjE5MTkxODEsMT
+QyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3
+NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLD
+E1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUx
+NzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MD
+BdfQ==
 -->
