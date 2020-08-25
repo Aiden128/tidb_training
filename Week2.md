@@ -175,9 +175,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 資料準備
 aiden@k8s-01:~$ go-tpc tpcc prepare --warehouses 10 -D tpcc -H 10.149.251.104 -P 4000 -T 10
 測試
+aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 4000 -T 10 --time 5m
 ```
- ./bin/go-tpc tpcc -H 127.0.0.1 -P 4000 -D tpcc --warehouses 10 run --time 5m
 
+測試結果：
 ```
 ```
 
@@ -345,11 +346,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzk2NzU4MjMsLTU2NDExODcyMCwtMT
-U4MTAyNDU2NiwtMTEwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2
-MzYxMSwtNTYxNDIwMTI0LC01MTQzODY2NzEsMTQyMDMwNDczMS
-wtMTA2NzAwOTk3Nyw4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0
-MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMz
-cwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUy
-LDE3NTM5NDkwODZdfQ==
+eyJoaXN0b3J5IjpbLTY0Mjc2NTI1NCwtNTY0MTE4NzIwLC0xNT
+gxMDI0NTY2LC0xMTA4MzM5OTcyLDMzNDc3OTE3MywyMTE1MTYz
+NjExLC01NjE0MjAxMjQsLTUxNDM4NjY3MSwxNDIwMzA0NzMxLC
+0xMDY3MDA5OTc3LDgwMzMyNDI2MiwtMTA5NjYzMjY3OSwtMTQx
+ODc4OTI4NCwyMTQ0NDExMzIzLC0xNzYxOTE5MTgxLDE0MjEzNz
+A2NjgsLTE2NjU2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIs
+MTc1Mzk0OTA4Nl19
 -->
