@@ -131,9 +131,10 @@ Query OK, 0 rows affected (2.95 sec)
 
 | 项目   |    |
 |:----|:----|
-| 操作系统      | Ubuntu 18.04|
+| 操作系统     | Ubuntu 18.04|
 | TiDB 版本     | TiDB-v4.0.0|
-| TiDB & PD     | 每台 "TiDB 服务器" 部署 2 个 tidb-server + 1 个 pd-server  |
+| TiDB     | 每台服务器部署 1 個 tidb-server |
+| PD       | 每台 "TiDB 服务器" 部署 2 个 tidb-server + 1 个 pd-server  |
 | TiKV          | 每台 "TiKV 服务器" 部署 4 个 tikv-server |
 | TiDB 关键参数 | performance: <br> max-procs: 24 <br> |
 | TiKV 关键参数 | readpool: <br> coprocessor: <br> high-concurrency: 8 <br> normal-concurrency: 8 <br> low-concurrency: 8 <br> storage: <br> block-cache: <br> capacity: "32GB" <br> |
@@ -306,11 +307,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTE3NDkwOCwtMTA2NzAwOTk3Nyw4MD
-MzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQx
-MTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNT
-Q1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEy
-NDU1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNz
-E1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0y
-MTA3NjMyODNdfQ==
+eyJoaXN0b3J5IjpbLTExNTAyNzgzNjYsLTEwNjcwMDk5NzcsOD
+AzMzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0
+MTEzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MD
+U0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0x
+MjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MD
+cxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NTE3LDk3NTIxNjE2Miwt
+MjEwNzYzMjgzXX0=
 -->
