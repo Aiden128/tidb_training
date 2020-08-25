@@ -195,8 +195,7 @@ aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 400
 ![enter image description here](https://lh3.googleusercontent.com/fp-PYWa95KOXwRj3IWJluYZ99k5K_LdQ4mhJg0iSff2Ro8K2R7t6EJapfuD63QSPJIhpf66qpmKHWidCeerobYtZOKqNTU4EWI-HiNMG1SEJVIfUVylZF28EfjK8Q08A1fn2lvEAwUA8F2kLElkgnFFQ60GdmyEEp5iD7ZY4AbfoNsj9EqCD5UHnYLgYpcQqEGqXF7hkYdp9UM8sXW-X-HvcOday_OPXLGKYPiR_Pkc2vx9jGkpOnpbEIb63nd7zbUnd0K2bGD1TUoVY-hXGMbkQLyX4yeFHgRlrr5x_T_14DuH59jRtFL6Cieu_tupLnTmYqAAQl1GOlNhzxV1ogr6EiaSH4-I71SbvsSxNUy86UTN8tzkBAWe-5hmyCTBq_9SFPnEdI2O5uRrJVgzl9_sN7iMXQr-eAwO7BvJsuY-ExiUKN8I_H1bfjjBGEbCNkRSynnfs8yOhTY8WzVhVsgyqLHRvp9b0kvTtz7hXymYGLbhD__N3D7_cwwDCz47RPW6E48j2UOfgS_IsrAgSJ-BDh265NgT3Z2LpGE4VVSMhF_lrBG2we1nbrg53iJWljccRIvFq5EdrhWZDSWuSnszPkoaYYX9wW7JGaXKwpQmp0i0bTsyyUC_bOe5JIJ9LKYw76bcNr1-pEj6uS9BbNjLkehYizBtVzHJW1ufsytyOULb0XG6Y2281kr_lxg=w508-h645-no?authuser=0)
 
 ### 分析
-目前看數據跟指標結果，應該主要還是在 TiKV 的 IO 上，除了物理環境限制之外目前环境下瓶颈不处于TiDB上。TiKV层的IO中，特别是插入相关耗时较多，推测大多由锁导致，涉及模块 raftstore ，Scheduler。
-
+目前看數據跟指標結果，應該主要還是在 TiKV 的 IO 上，除了物理環境限制之外，可以發現在資料 insert 的時間非常久，這邊應該是牽涉到 raftstore 跟排程的 Scheduler 上面。
 
 ## 延伸學習
 
@@ -215,11 +214,11 @@ aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 400
  5. ycsb,sysbench](https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter3/sysbench.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTU5NTA5NSwxMjIzOTAxMzAwLC01OT
-cxNTQzNDYsLTU2NDExODcyMCwtMTU4MTAyNDU2NiwtMTEwODMz
-OTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIwMTI0LC
-01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMz
-MjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMT
-MyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1
-LDkxOTM2NjU4NF19
+eyJoaXN0b3J5IjpbLTE4Njg3ODM5MTgsMTIyMzkwMTMwMCwtNT
+k3MTU0MzQ2LC01NjQxMTg3MjAsLTE1ODEwMjQ1NjYsLTExMDgz
+Mzk5NzIsMzM0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MTQyMDEyNC
+wtNTE0Mzg2NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5NzcsODAz
+MzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0MT
+EzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MDU0
+NSw5MTkzNjY1ODRdfQ==
 -->
