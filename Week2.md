@@ -151,6 +151,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 
 ####   关键指标的监控截图 
 ####   TiDB Query Summary 中的 qps 与 duration 
+
+
+
 ####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
 ####   TiKV Details 面板中 grpc 的 qps 以及 duration
 
@@ -316,11 +319,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNTE2MzYxMSwtNTYxNDIwMTI0LC01MT
-QzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMzMjQy
-NjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMy
-wtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkx
-OTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OT
-g0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwx
-NzEyMDI1OTUxXX0=
+eyJoaXN0b3J5IjpbMzM0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MT
+QyMDEyNCwtNTE0Mzg2NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5
+NzcsODAzMzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LD
+IxNDQ0MTEzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2
+NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MD
+g2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3Mjc3OTUsLTE2
+NjQ3MDcxNTBdfQ==
 -->
