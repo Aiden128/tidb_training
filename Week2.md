@@ -167,6 +167,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 Run finished, takes 3.164680955s READ - Takes(s): 3.2, Count: 484, OPS: 153.2, Avg(us): 2628, Min(us): 328, Max(us): 174433, 99th(us): 15000, 99.9th(us): 175000, 99.99th(us): 175000 UPDATE - Takes(s): 3.0, Count: 508, OPS: 172.0, Avg(us): 83150, Min(us): 12893, Max(us): 217830, 99th(us): 206000, 99.9th(us): 218000, 99.99th(us): 218000
 ```
 #####   TiDB Query Summary 中的 qps 与 duration 
+
 #####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
 #####   TiKV Details 面板中 grpc 的 qps 以及 duration
 
@@ -355,11 +356,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzE1NDM0NiwtNTY0MTE4NzIwLC0xNT
-gxMDI0NTY2LC0xMTA4MzM5OTcyLDMzNDc3OTE3MywyMTE1MTYz
-NjExLC01NjE0MjAxMjQsLTUxNDM4NjY3MSwxNDIwMzA0NzMxLC
-0xMDY3MDA5OTc3LDgwMzMyNDI2MiwtMTA5NjYzMjY3OSwtMTQx
-ODc4OTI4NCwyMTQ0NDExMzIzLC0xNzYxOTE5MTgxLDE0MjEzNz
-A2NjgsLTE2NjU2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIs
-MTc1Mzk0OTA4Nl19
+eyJoaXN0b3J5IjpbLTE5Nzk5NTc5NDgsLTU5NzE1NDM0NiwtNT
+Y0MTE4NzIwLC0xNTgxMDI0NTY2LC0xMTA4MzM5OTcyLDMzNDc3
+OTE3MywyMTE1MTYzNjExLC01NjE0MjAxMjQsLTUxNDM4NjY3MS
+wxNDIwMzA0NzMxLC0xMDY3MDA5OTc3LDgwMzMyNDI2MiwtMTA5
+NjYzMjY3OSwtMTQxODc4OTI4NCwyMTQ0NDExMzIzLC0xNzYxOT
+E5MTgxLDE0MjEzNzA2NjgsLTE2NjU2NTA1NDUsOTE5MzY2NTg0
+LC0zODc3NzY0NTJdfQ==
 -->
