@@ -163,6 +163,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 ```
 ./bin/go-ycsb load mysql -P workloads/workloada -p recordcount=10000 -p mysql.host=10.149.251.104 -p mysql.port=4000 --threads 16
 ```
+
 測試結果
 ```
 ./bin/go-ycsb run mysql -P workloads/workloada -p recordcount=10000 -p mysql.host=10.149.251.104 -p mysql.port=4000 --threads 16
@@ -330,11 +331,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzNjMxNTQsLTE1ODEwMjQ1NjYsLTExMD
-gzMzk5NzIsMzM0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MTQyMDEy
-NCwtNTE0Mzg2NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5NzcsOD
-AzMzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0
-MTEzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MD
-U0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0x
-MjQ1NTk4NDNdfQ==
+eyJoaXN0b3J5IjpbLTU2NDExODcyMCwtMTU4MTAyNDU2NiwtMT
+EwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIw
+MTI0LC01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Ny
+w4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0
+NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1Nj
+UwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYs
+LTEyNDU1OTg0M119
 -->
