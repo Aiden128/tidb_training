@@ -30,6 +30,7 @@
 ```
     ssh-keygen -b 2048 -f ~/.ssh/multipass -t rsa -q -N ""
 ```
+
 - 把產生的 pubkey 到 cloud-init.yaml
 ```
 $ cat ./cloud-init.yaml
@@ -37,6 +38,8 @@ $ cat ./cloud-init.yaml
 ssh_authorized_keys:
   - ssh-rsa AAAAB3.......hh32R ruan@mbp
 ```
+這邊要注意一下，因為自己在建置過程中有使用 tiup destroy 重新建立 VM，執行 tiup destroy 的時候會順便把 key 刪除
+
 - 生成 VM，依照規格用 script 產生，配置如下。
 
 TODO
@@ -287,10 +290,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMj
-E0NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1
-NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwOD
-YsLTEyNDU1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2
-NDcwNzE1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MT
-YyLC0yMTA3NjMyODMsLTI1NjUyMDYwMF19
+eyJoaXN0b3J5IjpbMTY3MzEwOTU3OCwtMTA5NjYzMjY3OSwtMT
+QxODc4OTI4NCwyMTQ0NDExMzIzLC0xNzYxOTE5MTgxLDE0MjEz
+NzA2NjgsLTE2NjU2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NT
+IsMTc1Mzk0OTA4NiwtMTI0NTU5ODQzLDI2MzY2MTE4MSwxNTUy
+NzI3Nzk1LC0xNjY0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2ND
+UxNyw5NzUyMTYxNjIsLTIxMDc2MzI4MywtMjU2NTIwNjAwXX0=
+
 -->
