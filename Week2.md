@@ -180,7 +180,11 @@ aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 400
 ```
 ```
 #####   TiDB Query Summary 中的 qps 与 duration 
+![enter image description here](https://lh3.googleusercontent.com/RklgNKcnOVa8HwyOv0MierDj2H4kwPiyFWukI3E1nTGymAYGoLtsaLVs8a78B3Awur5jjfdwsc8IVbkT5gy9voNstCBkYIy0b1pHmUkOWFLBmetw81nSwtbSs6Bwu1k6LaH7JyMos5clQI-46hOw9nSTZCMhkdit0O4vVFbjvTgR8iMMci3ZkWEAvSAFZoNZu4LChNbrcN3ZBwjhNbhRAOAoCV2wj370i0p4dwvNo-posbM3CxbUuEXj_yvUOcY3fOW_MNpx8Y4_1qk1xK7h19cAZ3-euq4NYFP1b7teWEgxeQpDulsyG9QhwoXhIcsqeNuI7rGUtQVDpn0AjBOcDxBAkNGX_G1LCb38bso-LNh59LxP8I-5e6--NsPli_Ysdz14_UTwBtw9Gbo8u_pFx9eHpAbDlQgB72Xs6QoT6Rl84RCWEFHcWVf4SiJPshbKIzMLkpLQbpYHOHns5u_cac4zo1CXV6TDLc4sxgequEO5L2ptgWa1YX84Nz-KgaZYFn71ucvzcroamEbsymxvWSKKsvrUBtTOCluZk2KH7VElgbeo6GWj23Pvf0dECneIlIhfxF6SqsTrChUgpWjjxeLC9m-6ixCFMqZJyGUB4lnXgfISl7nCSb0NxsAr4SEDZLY9ivaIC1WzDAwX9KTcbannVtxR3i-ll95QsBB8d9BTXUQntCqXwjpSNq3RBg=w1008-h276-no?authuser=0)
+#####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
+![enter image description here](https://lh3.googleusercontent.com/6qZ0v3u1ileAtioy4ZmWkuf-5rPBR32bqMYsZ1zwqWrSsIGnU9iaK2CHhrY7HgtUFo8I0Q3bWPmgkMTYRg0dS0Yv5uxfesL9XT1hVXOCjUJwRvPpp-m7xgUNQThhKeKnjPWZBgauNllvzok2IlnF7KYebVoTds2Lb03baNGqRWclAqudrUo8jkeZMY1djS-ib5FjU0zqsmesL6e6fb-mAiXrHbSx88N_XrPM9f_9YQsBRWTbR84jPO1IVi7EUcemKvOmuH-6dQdyN9SzBB6tbp5RuyDENMDNrw40YDsVfW-pz4Ak-NvPi4_Fpzp5-pm2lzylsrZsV8AF1hjWIyqejaV1eQXJFG0rWCy2ygKTXAz1Pgv4OA4sVkBzdaiB6K8Mt_wh8cPiMySVwd-QfKPaMozjfbL9uFSHhf9B62GvMyO9gfGvJcW05zf6UP07io3ki6cManDiipjeW64--GIw-tiBAephsFaGKSgFPc7IJSfzXU8XF0ZyOfxExuDKQ34Wa105YtzvnRrNQIzJ_oS8suxf-lcANQW4HbIrbpbgaQVXNTwQI2Yf_8pdxLhb7pCEXCQXK7Vnyt3oMRsump9vnpd5wlvDjcjbym1lCsebKtGeB29m8zQa21cpcBONE1NKyHAxnBUCSdxzts-SZ1KWbdSeR7NlPfO_8ozrfE8JS_VeJnpMe9_bZiXs6rQZLA=w502-h964-no?authuser=0)
 #####   TiKV Details 面板中 grpc 的 qps 以及 duration
+
 
 
 
@@ -346,7 +350,7 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTEzMzg1NDcsLTU2NDExODcyMCwtMT
+eyJoaXN0b3J5IjpbLTIwNDY5MzkxNTAsLTU2NDExODcyMCwtMT
 U4MTAyNDU2NiwtMTEwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2
 MzYxMSwtNTYxNDIwMTI0LC01MTQzODY2NzEsMTQyMDMwNDczMS
 wtMTA2NzAwOTk3Nyw4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0
