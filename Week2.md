@@ -117,6 +117,16 @@ mysql> create database sbtest;
 Query OK, 0 rows affected (2.95 sec)
 ```
 
+### 測試工具安裝
+
+#### go-tpc
+1. 用 script 方式安裝
+```
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/go-tpc/master/install.sh | sh
+```
+2. 起
+
+
 ## 作業：測試報告
 #### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
@@ -307,11 +317,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDM4NjY3MSwxNDIwMzA0NzMxLC0xMD
-Y3MDA5OTc3LDgwMzMyNDI2MiwtMTA5NjYzMjY3OSwtMTQxODc4
-OTI4NCwyMTQ0NDExMzIzLC0xNzYxOTE5MTgxLDE0MjEzNzA2Nj
-gsLTE2NjU2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIsMTc1
-Mzk0OTA4NiwtMTI0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nz
-k1LC0xNjY0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5
-NzUyMTYxNjJdfQ==
+eyJoaXN0b3J5IjpbLTk0MzU0NzE2LC01MTQzODY2NzEsMTQyMD
+MwNDczMSwtMTA2NzAwOTk3Nyw4MDMzMjQyNjIsLTEwOTY2MzI2
+NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2MTkxOTE4MS
+wxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3
+Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0MywyNjM2NjExOD
+EsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEyMDI1OTUxLDEy
+NTE3NjQ1MTddfQ==
 -->
