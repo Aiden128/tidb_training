@@ -137,6 +137,9 @@ Query OK, 0 rows affected (2.95 sec)
 | TiKV 關鍵參數 | readpool: <br> coprocessor: <br> high-concurrency: 8 <br> normal-concurrency: 8 <br> low-concurrency: 8 <br> storage: <br> block-cache: <br> capacity: "32GB" <br> |
 
 ####  测试输出结果 
+
+
+
 ####   关键指标的监控截图 
 ####   TiDB Query Summary 中的 qps 与 duration 
 ####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
@@ -304,11 +307,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MD
-MzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQx
-MTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNT
-Q1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEy
-NDU1OTg0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNz
-E1MCwxNzEyMDI1OTUxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0y
-MTA3NjMyODNdfQ==
+eyJoaXN0b3J5IjpbLTUxNDM4NjY3MSwxNDIwMzA0NzMxLC0xMD
+Y3MDA5OTc3LDgwMzMyNDI2MiwtMTA5NjYzMjY3OSwtMTQxODc4
+OTI4NCwyMTQ0NDExMzIzLC0xNzYxOTE5MTgxLDE0MjEzNzA2Nj
+gsLTE2NjU2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIsMTc1
+Mzk0OTA4NiwtMTI0NTU5ODQzLDI2MzY2MTE4MSwxNTUyNzI3Nz
+k1LC0xNjY0NzA3MTUwLDE3MTIwMjU5NTEsMTI1MTc2NDUxNyw5
+NzUyMTYxNjJdfQ==
 -->
