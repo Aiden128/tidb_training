@@ -124,13 +124,12 @@ Query OK, 0 rows affected (2.95 sec)
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/go-tpc/master/install.sh | sh
 ```
-
-
+安裝後記得要用 source 啟動 .bashrc
 
 ## 作業：測試報告
 #### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
-|实例 | 个数 | 物理机配置 | IP
+|實例 | 個數 | 物理機配置 | IP
 | :-- | :-- | :-- | :-- | :-- |
 | TiDB |3 | 16 VCore 24GB * 1 | 10.149.251.103 <br/> 10.149.251.81 <br/> 10.149.251.67
 | PD | 3 | 4 VCore 8GB * 1 |10.149.251.27 <br/> 10.149.251.46 <br/> 10.149.251.241
@@ -317,7 +316,7 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjg3MTcyNywtNTYxNDIwMTI0LC01MT
+eyJoaXN0b3J5IjpbMjExNTE2MzYxMSwtNTYxNDIwMTI0LC01MT
 QzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMzMjQy
 NjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMy
 wtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkx
