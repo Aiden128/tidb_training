@@ -173,8 +173,6 @@ Run finished, takes 3.164680955s READ - Takes(s): 3.2, Count: 484, OPS: 153.2, A
 #####   TiKV Details 面板中 grpc 的 qps 以及 duration
 ![enter image description here](https://lh3.googleusercontent.com/Rc_ibGfEB76uL3AaaR0aVaoIZFVnybLdZRUI3ydPNzW1QAVYuEeNCReMjdYXXUUzjYGvQL3-na-5vt9krRU2V0spL_n23GINEDanOMZHdDe2eaSIVGaQyMdLYAVtxHuY1QRqRcisiBfLr-PUaIEliXVBmo6imVfYsTk83X70DbWAfBBZGAuCsQQFxt8raQ5_jFp1APdfSVONNWmjWgToKZBw6uuFvzQIbFz9JuMmlCgIdyJcQw_MDmxky7C78hUCibol3jF_QXykudOre-daDTJf4iMzW3Lv-OhNBrsQQUp9oWTL-MNIx29uIjBBc41SGJuLKZQfgv_IeiT6J6wLqOXhnc5f9gf0klN-3H3MCW3kmm-UE223np9cCDcaCUWg1rEG6cxokotmHRXPRggz-UY-azX_BDiS5PoV9CmNnUUOrhDu13qBsFRdoLnIlKjwtak-KjscIFK0KzxN2G-7uvljTBt3cTKhq1lFqezYKidALta4o3O7S5BlRgKr03H8RC4ZQ9zwS03lXgrmFxa227j0r1Krg-qehsHU9ecVMUN-AJFGzHRaGAoZ2wA2CTQo2koJz8378J1GNjxtM2F_5FqB52FRw0cQ8wFFtK80zi8LXD-CIXGjki4D5HqW4VZpatXhMTGFHiZPKf-MQtMvnArXQnSPsTtb92FnQuRBrvaBR-AjlcAfnfbNcW2YlQ=w499-h647-no?authuser=0)
 
-
-
 #### go-tpc
 測試方法：
 ```
@@ -220,11 +218,11 @@ Finished [Summary] DELIVERY - Takes(s): 338.2, Count: 24, TPM: 4.3, Sum(ms): 478
  5. ycsb,sysbench](https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter3/sysbench.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTMxOTcyNSwxMjIzOTAxMzAwLC01OT
-cxNTQzNDYsLTU2NDExODcyMCwtMTU4MTAyNDU2NiwtMTEwODMz
-OTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIwMTI0LC
-01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMz
-MjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMT
-MyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1
-LDkxOTM2NjU4NF19
+eyJoaXN0b3J5IjpbLTE3MTQ4OTMwNDcsMTIyMzkwMTMwMCwtNT
+k3MTU0MzQ2LC01NjQxMTg3MjAsLTE1ODEwMjQ1NjYsLTExMDgz
+Mzk5NzIsMzM0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MTQyMDEyNC
+wtNTE0Mzg2NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5NzcsODAz
+MzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0MT
+EzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MDU0
+NSw5MTkzNjY1ODRdfQ==
 -->
