@@ -129,6 +129,14 @@ Query OK, 0 rows affected (2.95 sec)
 
 ####  调整过后的 TiDB 和 TiKV 配置
 
+| 项目   |    |
+|:----|:----|
+| 操作系统      | Ubuntu 18.04|
+| TiDB 版本     | TiDB-v4.0.0|
+| TiDB & PD     | 每台 "TiDB 服务器" 部署 2 个 tidb-server + 1 个 pd-server  |
+| TiKV          | 每台 "TiKV 服务器" 部署 4 个 tikv-server |
+| TiDB 关键参数 | performance: <br> max-procs: 24 <br> |
+| TiKV 关键参数 | readpool: <br> coprocessor: <br> high-concurrency: 8 <br> normal-concurrency: 8 <br> low-concurrency: 8 <br> storage: <br> block-cache: <br> capacity: "32GB" <br> |
 
 ####  测试输出结果 
 ####   关键指标的监控截图 
@@ -298,7 +306,7 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTc1NDUzMSwtMTA2NzAwOTk3Nyw4MD
+eyJoaXN0b3J5IjpbMTY4MTE3NDkwOCwtMTA2NzAwOTk3Nyw4MD
 MzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQx
 MTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNT
 Q1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEy
