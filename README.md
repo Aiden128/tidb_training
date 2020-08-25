@@ -5,3 +5,4 @@
 以下是每週要交的作業內容：
 
 - Week1：https://github.com/Aiden128/tidb_training/blob/master/Week1.md
+- Week2：https://github.com/Aiden128/tidb_training/blob/master/Week2.md
