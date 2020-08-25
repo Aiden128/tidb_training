@@ -146,6 +146,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 | TiKV 關鍵參數 | readpool: <br> coprocessor: <br> high-concurrency: 8 <br> normal-concurrency: 8 <br> low-concurrency: 8 <br> storage: <br> block-cache: <br> capacity: "32GB" <br> |
 
 ####  测试输出结果 
+##### sysbench
+##### 
+##### go-tpc
 
 
 
@@ -323,11 +326,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDgzMzk5NzIsMzM0Nzc5MTczLDIxMT
-UxNjM2MTEsLTU2MTQyMDEyNCwtNTE0Mzg2NjcxLDE0MjAzMDQ3
-MzEsLTEwNjcwMDk5NzcsODAzMzI0MjYyLC0xMDk2NjMyNjc5LC
-0xNDE4Nzg5Mjg0LDIxNDQ0MTEzMjMsLTE3NjE5MTkxODEsMTQy
-MTM3MDY2OCwtMTY2NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3Nj
-Q1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1
-NTI3Mjc3OTVdfQ==
+eyJoaXN0b3J5IjpbMTEyNjcxMjg0NiwtMTEwODMzOTk3MiwzMz
+Q3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIwMTI0LC01MTQzODY2
+NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMzMjQyNjIsLT
+EwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2
+MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2Nj
+U4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0Mywy
+NjM2NjExODFdfQ==
 -->
