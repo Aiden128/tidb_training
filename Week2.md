@@ -158,8 +158,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 
 ![enter image description here](https://lh3.googleusercontent.com/KJU0PYw__xrT1IrXGtt_cYjLI3ev2X2rt9GC-rcGrnUgnM3Euri1Tm5z2Pisko1f8NNpVv9NCb8f7npGVUsepPxPsyNoCOn7_vr6Q9PO60imbGqy_1nGSLTDec-6of4oHLpPuFfGKr-KFK4_6NFO99A0uNHvhVR3KtPRM0y8OGll0Azhk75wm4awCYoF8y3vKSsm56HBzLVlX7ePnrBZQ2R9E10adbr_IEDiX0a4gh9Zahb7CxSQSimATX4Ta4qmaFJxiRrwHpqAxqYJ37_BCJ7Y6BkowqNcizV2FzCf5FoE5NYHG2r1UAyfQ109X-cFx_IEB6-CyOJWVYy-5Uq_CPrDU1whDRJ3WfAsUxdgI4ilvZ12OyIlKRvj_Ai6reBlckJKWmWXB-Sxzf-6FH8Klq288EXvSPgF06MqFyFkVsWm7CUUr_GbEchfTXzlortnBBvWat66mcQSxZngUFvwoYv3S7KGoc6Y8QPV5FLwvhwHUAKsEaaiaqk6wCcDapT7-dw5432xOsRVp8QHuQIuIsD6TJD1D1DL6y1JX6lxT42j3O5JYlHEVC98hrjcPnQsoxioIPk979GUtqqLyZYot1uS7Ou9l8xubHhcj732nJESANWfWdOXVU8WDuxnaaaoxfQZ_inOsqftcy_uMUDThYm5RKKadSgTSAuFux6uu3S0-_dnW28KiUefZHBRRQ=w507-h655-no?authuser=0)
 
-
-
+#### go-ycsb
+測試方法
+```
+./bin/go-ycsb load mysql -P workloads/workloada -p recordcount=10000 -p mysql.host=10.149.251.104 -p mysql.port=4000 --threads 16
+```
+測試結果
+```
+./bin/go-ycsb run mysql -P workloads/workloada -p recordcount=10000 -p mysql.host=10.149.251.104 -p mysql.port=4000 --threads 16
+```
 
 ## 延伸學習
 
@@ -323,11 +330,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MjI3MTczMywtMTU4MTAyNDU2NiwtMT
-EwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIw
-MTI0LC01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Ny
-w4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0
-NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1Nj
-UwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYs
-LTEyNDU1OTg0M119
+eyJoaXN0b3J5IjpbNjgzNjMxNTQsLTE1ODEwMjQ1NjYsLTExMD
+gzMzk5NzIsMzM0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MTQyMDEy
+NCwtNTE0Mzg2NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5NzcsOD
+AzMzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0
+MTEzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MD
+U0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0x
+MjQ1NTk4NDNdfQ==
 -->
