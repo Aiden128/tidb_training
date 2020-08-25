@@ -128,7 +128,11 @@ Query OK, 0 rows affected (2.95 sec)
 | Monitoring & Grafana | 1 | 4 VCore 8GB * 1  | 10.149.251.168 
 
 ####  调整过后的 TiDB 和 TiKV 配置
-* 测试输出结果 * 关键指标的监控截图 * TiDB Query Summary 中的 qps 与 duration * TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 * TiKV Details 面板中 grpc 的 qps 以及 duration
+####  测试输出结果 
+####   关键指标的监控截图 
+####   TiDB Query Summary 中的 qps 与 duration 
+####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
+####   TiKV Details 面板中 grpc 的 qps 以及 duration
 
 ## 延伸學習
 
@@ -292,11 +296,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDM1MjEwMSw4MDMzMjQyNjIsLTEwOT
-Y2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2MTkx
-OTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NC
-wtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0MywyNjM2
-NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEyMDI1OT
-UxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1
-NjUyMDYwMF19
+eyJoaXN0b3J5IjpbLTEwNjcwMDk5NzcsODAzMzI0MjYyLC0xMD
+k2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0MTEzMjMsLTE3NjE5
+MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MTkzNjY1OD
+QsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMsMjYz
+NjYxMTgxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNT
+k1MSwxMjUxNzY0NTE3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0y
+NTY1MjA2MDBdfQ==
 -->
