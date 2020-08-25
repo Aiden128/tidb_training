@@ -144,14 +144,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 | TiDB 版本     | TiDB-v4.0.0|
 | TiDB 關鍵參數 | performance: <br> max-procs: 24 <br> |
 | TiKV 關鍵參數 | readpool: <br> coprocessor: <br> high-concurrency: 8 <br> normal-concurrency: 8 <br> low-concurrency: 8 <br> storage: <br> block-cache: <br> capacity: "32GB" <br> |
-
-####  测试输出结果 
-##### sysbench
-##### go-ycsb
-##### go-tpc
-
-
-
+ 
+#### sysbench
 ####   关键指标的监控截图 
 ####   TiDB Query Summary 中的 qps 与 duration 
 ![enter image description here](https://lh3.googleusercontent.com/e0w092l5ZtFt262-yklnQw9zIA2yVyACHBncgWCOPEMXcg0t2HtRhSP5mKUICEmv1aglG6QyOxz842Ho1TO7XWhHFe8VPB_cM50ne_wWE2_kqsimP-d8mZVSVP-yUMvpIPw302SC9BvpQPHIfLSIVxbFqGTj2yDOLlrB5A9XyKv8tklZ1VCBiaI5mlnNetf5vSahVSLhObUPgmSDuYRkKERFd-S7PBaxYvhKrjtUfWOywtBpfkEdM27wr6LSxKNP5JWw2xsGQjtnQT9FW4KpXiN8cUiZCDUxFP8qP-bmQcvxoOqV-p1M4a0GJ4IA9Gf7DQik9mKADaE8NZTOu6rHp3uerWx28Pg7p0i6htxHGSOV-a9fAqZpy6cRZ6OBwG05KclDgb4hBo8C135SpRqxXya2a6W6qQKjo1lz6AxcrDsfFujQc0-zjMYnxFlpNwk-bG5F_N6FLehB3I3H67GHPTMx1mKkc6T7g1BL_Awc8MVoffQF37vzAhlC7BvTqATcjmWG5xEGWIikk137817rKGzDEMn7LiVvX1rpYfpZgEVp9q0hSiI9WiyjbreVwUYTnDTvrUai7qORstApQSMg37qoOS78oJJdNQmECvWpMtXJY5Y9APgAFFcvu3CsFYctgTBUo30tVJfcnJom7_WRkG52hDVsWsmpUUfij4CYMb_4cFp56TT7XW2CwRLKyQ=w1020-h284-no?authuser=0)
@@ -163,6 +157,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 ####   TiKV Details 面板中 grpc 的 qps 以及 duration
 
 ![enter image description here](https://lh3.googleusercontent.com/KJU0PYw__xrT1IrXGtt_cYjLI3ev2X2rt9GC-rcGrnUgnM3Euri1Tm5z2Pisko1f8NNpVv9NCb8f7npGVUsepPxPsyNoCOn7_vr6Q9PO60imbGqy_1nGSLTDec-6of4oHLpPuFfGKr-KFK4_6NFO99A0uNHvhVR3KtPRM0y8OGll0Azhk75wm4awCYoF8y3vKSsm56HBzLVlX7ePnrBZQ2R9E10adbr_IEDiX0a4gh9Zahb7CxSQSimATX4Ta4qmaFJxiRrwHpqAxqYJ37_BCJ7Y6BkowqNcizV2FzCf5FoE5NYHG2r1UAyfQ109X-cFx_IEB6-CyOJWVYy-5Uq_CPrDU1whDRJ3WfAsUxdgI4ilvZ12OyIlKRvj_Ai6reBlckJKWmWXB-Sxzf-6FH8Klq288EXvSPgF06MqFyFkVsWm7CUUr_GbEchfTXzlortnBBvWat66mcQSxZngUFvwoYv3S7KGoc6Y8QPV5FLwvhwHUAKsEaaiaqk6wCcDapT7-dw5432xOsRVp8QHuQIuIsD6TJD1D1DL6y1JX6lxT42j3O5JYlHEVC98hrjcPnQsoxioIPk979GUtqqLyZYot1uS7Ou9l8xubHhcj732nJESANWfWdOXVU8WDuxnaaaoxfQZ_inOsqftcy_uMUDThYm5RKKadSgTSAuFux6uu3S0-_dnW28KiUefZHBRRQ=w507-h655-no?authuser=0)
+
+
+
 
 ## 延伸學習
 
@@ -326,11 +323,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODEwMjQ1NjYsLTExMDgzMzk5NzIsMz
-M0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MTQyMDEyNCwtNTE0Mzg2
-NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5NzcsODAzMzI0MjYyLC
-0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0MTEzMjMsLTE3
-NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MTkzNj
-Y1ODQsLTM4Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMs
-MjYzNjYxMTgxXX0=
+eyJoaXN0b3J5IjpbMTI2MjI3MTczMywtMTU4MTAyNDU2NiwtMT
+EwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIw
+MTI0LC01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Ny
+w4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0
+NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1Nj
+UwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYs
+LTEyNDU1OTg0M119
 -->
