@@ -169,6 +169,20 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 ./bin/go-ycsb run mysql -P workloads/workloada -p recordcount=10000 -p mysql.host=10.149.251.104 -p mysql.port=4000 --threads 16
 ```
 
+#### go-tpc
+測試方法：
+```
+資料準備
+aiden@k8s-01:~$ go-tpc tpcc prepare --warehouses 10 -D tpcc -H 10.149.251.104 -P 4000 -T 10
+測試
+```
+ ./bin/go-tpc tpcc -H 127.0.0.1 -P 4000 -D tpcc --warehouses 10 run --time 5m
+
+```
+```
+
+
+
 ## 延伸學習
 
 ## 課前學習資料筆記
@@ -331,11 +345,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDExODcyMCwtMTU4MTAyNDU2NiwtMT
-EwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIw
-MTI0LC01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Ny
-w4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0
-NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1Nj
-UwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYs
-LTEyNDU1OTg0M119
+eyJoaXN0b3J5IjpbLTEwNzk2NzU4MjMsLTU2NDExODcyMCwtMT
+U4MTAyNDU2NiwtMTEwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2
+MzYxMSwtNTYxNDIwMTI0LC01MTQzODY2NzEsMTQyMDMwNDczMS
+wtMTA2NzAwOTk3Nyw4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0
+MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMz
+cwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUy
+LDE3NTM5NDkwODZdfQ==
 -->
