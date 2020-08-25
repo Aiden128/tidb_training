@@ -117,8 +117,8 @@ mysql> create database sbtest;
 Query OK, 0 rows affected (2.95 sec)
 ```
 
-## 測試報告
-### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
+## 作業：測試報告
+#### 部署环境的机器配置(CPU、内存、磁盘规格型号)，拓扑结构(TiDB、TiKV 各部署于哪些节点)  
 
 |实例 | 个数 | 物理机配置 | IP
 | :-- | :-- | :-- | :-- | :-- |
@@ -127,6 +127,8 @@ Query OK, 0 rows affected (2.95 sec)
 | TiKV | 3 | 16 VCore 24 GB | 10.149.251.142 <br/> 10.149.251.123 <br/> 10.149.251.53 
 | Monitoring & Grafana | 1 | 4 VCore 8GB * 1  | 10.149.251.168 
 
+####  调整过后的 TiDB 和 TiKV 配置
+* 测试输出结果 * 关键指标的监控截图 * TiDB Query Summary 中的 qps 与 duration * TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 * TiKV Details 面板中 grpc 的 qps 以及 duration
 
 ## 延伸學習
 
@@ -290,11 +292,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzMzI0MjYyLC0xMDk2NjMyNjc5LC0xND
-E4Nzg5Mjg0LDIxNDQ0MTEzMjMsLTE3NjE5MTkxODEsMTQyMTM3
-MDY2OCwtMTY2NTY1MDU0NSw5MTkzNjY1ODQsLTM4Nzc3NjQ1Mi
-wxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMTgxLDE1NTI3
-Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwxMjUxNzY0NT
-E3LDk3NTIxNjE2MiwtMjEwNzYzMjgzLC0yNTY1MjA2MDBdfQ==
-
+eyJoaXN0b3J5IjpbMTMyNDM1MjEwMSw4MDMzMjQyNjIsLTEwOT
+Y2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2MTkx
+OTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NC
+wtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OTg0MywyNjM2
+NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwxNzEyMDI1OT
+UxLDEyNTE3NjQ1MTcsOTc1MjE2MTYyLC0yMTA3NjMyODMsLTI1
+NjUyMDYwMF19
 -->
