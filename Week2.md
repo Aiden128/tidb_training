@@ -146,16 +146,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/g
 | TiKV 關鍵參數 | readpool: <br> coprocessor: <br> high-concurrency: 8 <br> normal-concurrency: 8 <br> low-concurrency: 8 <br> storage: <br> block-cache: <br> capacity: "32GB" <br> |
  
 #### sysbench
-####   关键指标的监控截图 
-####   TiDB Query Summary 中的 qps 与 duration 
+#####   TiDB Query Summary 中的 qps 与 duration 
 ![enter image description here](https://lh3.googleusercontent.com/e0w092l5ZtFt262-yklnQw9zIA2yVyACHBncgWCOPEMXcg0t2HtRhSP5mKUICEmv1aglG6QyOxz842Ho1TO7XWhHFe8VPB_cM50ne_wWE2_kqsimP-d8mZVSVP-yUMvpIPw302SC9BvpQPHIfLSIVxbFqGTj2yDOLlrB5A9XyKv8tklZ1VCBiaI5mlnNetf5vSahVSLhObUPgmSDuYRkKERFd-S7PBaxYvhKrjtUfWOywtBpfkEdM27wr6LSxKNP5JWw2xsGQjtnQT9FW4KpXiN8cUiZCDUxFP8qP-bmQcvxoOqV-p1M4a0GJ4IA9Gf7DQik9mKADaE8NZTOu6rHp3uerWx28Pg7p0i6htxHGSOV-a9fAqZpy6cRZ6OBwG05KclDgb4hBo8C135SpRqxXya2a6W6qQKjo1lz6AxcrDsfFujQc0-zjMYnxFlpNwk-bG5F_N6FLehB3I3H67GHPTMx1mKkc6T7g1BL_Awc8MVoffQF37vzAhlC7BvTqATcjmWG5xEGWIikk137817rKGzDEMn7LiVvX1rpYfpZgEVp9q0hSiI9WiyjbreVwUYTnDTvrUai7qORstApQSMg37qoOS78oJJdNQmECvWpMtXJY5Y9APgAFFcvu3CsFYctgTBUo30tVJfcnJom7_WRkG52hDVsWsmpUUfij4CYMb_4cFp56TT7XW2CwRLKyQ=w1020-h284-no?authuser=0)
 
 
-####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
+#####   TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标 
 ![enter image description here](https://lh3.googleusercontent.com/cRVE1L43K4L-4ccJVX0d3j37dpWbnU3dyc1ne-vKMQzP6o297QC2gQk-oE2neJoEa16zmOz-TdV8OfL1yB0SurQ9uQn6tRNLye2HR5wOBQmBi_BIZqVngYL1op2yDjHEqTHvvIAuN_dW1p1lZViC4SVIunV5DM0Tcr-hHpTxwe9yQHIALfXwnwZuRjMlvLVoT8wPBw2kqJ5M-l70g374JMWxt4lB_lTGb7PE-QLnhICdyocNFSpiIwW-mJ-DUviu-V7cJiGGIWagKLfnKmozoTEKguK671FKNp4yGqkvX0AMK0vJ60Vty0scv9OxCq4u-xKfwxppI0LpzIjk6hPReTshTfhDDZOiNd-fIT2Ubw3uBvzSbE48FGEM2zigJK7Fw7GHSHGjV_M-GB2vKtTQDd0rspbDiSDPqXF5rWlUlGEIZcSn9b6O4cJdav14onN2b9pw8t2p7Q0kuhpWb23HFv0RWIjEjS7p6FMLphl63DFULHqWC0LQcwhlKXIvIuh2p9YqKaOt5Y73n29dO7HYktzbZEnB4whWyKhU3Jnqu5WPG4OACVVC8y6HufbEa9BlzX03mYczUfiYn0w3r-PJcsoFcIT1XQI3BRKn4bk2CNXziJ7_lD-Kcffix_4SJOfo_0-wYkrLcZWwvDa2IYYxMNv2uW8xxRhh-6IIFGBBZQ8Xo3JwJDiE8rVRP9d6_g=w516-h970-no?authuser=0)
 
-####   TiKV Details 面板中 grpc 的 qps 以及 duration
-
+#####   TiKV Details 面板中 grpc 的 qps 以及 duration
 ![enter image description here](https://lh3.googleusercontent.com/KJU0PYw__xrT1IrXGtt_cYjLI3ev2X2rt9GC-rcGrnUgnM3Euri1Tm5z2Pisko1f8NNpVv9NCb8f7npGVUsepPxPsyNoCOn7_vr6Q9PO60imbGqy_1nGSLTDec-6of4oHLpPuFfGKr-KFK4_6NFO99A0uNHvhVR3KtPRM0y8OGll0Azhk75wm4awCYoF8y3vKSsm56HBzLVlX7ePnrBZQ2R9E10adbr_IEDiX0a4gh9Zahb7CxSQSimATX4Ta4qmaFJxiRrwHpqAxqYJ37_BCJ7Y6BkowqNcizV2FzCf5FoE5NYHG2r1UAyfQ109X-cFx_IEB6-CyOJWVYy-5Uq_CPrDU1whDRJ3WfAsUxdgI4ilvZ12OyIlKRvj_Ai6reBlckJKWmWXB-Sxzf-6FH8Klq288EXvSPgF06MqFyFkVsWm7CUUr_GbEchfTXzlortnBBvWat66mcQSxZngUFvwoYv3S7KGoc6Y8QPV5FLwvhwHUAKsEaaiaqk6wCcDapT7-dw5432xOsRVp8QHuQIuIsD6TJD1D1DL6y1JX6lxT42j3O5JYlHEVC98hrjcPnQsoxioIPk979GUtqqLyZYot1uS7Ou9l8xubHhcj732nJESANWfWdOXVU8WDuxnaaaoxfQZ_inOsqftcy_uMUDThYm5RKKadSgTSAuFux6uu3S0-_dnW28KiUefZHBRRQ=w507-h655-no?authuser=0)
 
 #### go-ycsb
@@ -181,6 +179,8 @@ aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 400
 測試結果：
 ```
 ```
+#####   TiDB Query Summary 中的 qps 与 duration 
+#####   TiKV Details 面板中 grpc 的 qps 以及 duration
 
 
 
@@ -346,11 +346,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Mjc2NTI1NCwtNTY0MTE4NzIwLC0xNT
-gxMDI0NTY2LC0xMTA4MzM5OTcyLDMzNDc3OTE3MywyMTE1MTYz
-NjExLC01NjE0MjAxMjQsLTUxNDM4NjY3MSwxNDIwMzA0NzMxLC
-0xMDY3MDA5OTc3LDgwMzMyNDI2MiwtMTA5NjYzMjY3OSwtMTQx
-ODc4OTI4NCwyMTQ0NDExMzIzLC0xNzYxOTE5MTgxLDE0MjEzNz
-A2NjgsLTE2NjU2NTA1NDUsOTE5MzY2NTg0LC0zODc3NzY0NTIs
-MTc1Mzk0OTA4Nl19
+eyJoaXN0b3J5IjpbLTE5OTEzMzg1NDcsLTU2NDExODcyMCwtMT
+U4MTAyNDU2NiwtMTEwODMzOTk3MiwzMzQ3NzkxNzMsMjExNTE2
+MzYxMSwtNTYxNDIwMTI0LC01MTQzODY2NzEsMTQyMDMwNDczMS
+wtMTA2NzAwOTk3Nyw4MDMzMjQyNjIsLTEwOTY2MzI2NzksLTE0
+MTg3ODkyODQsMjE0NDQxMTMyMywtMTc2MTkxOTE4MSwxNDIxMz
+cwNjY4LC0xNjY1NjUwNTQ1LDkxOTM2NjU4NCwtMzg3Nzc2NDUy
+LDE3NTM5NDkwODZdfQ==
 -->
