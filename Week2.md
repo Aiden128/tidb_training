@@ -186,6 +186,12 @@ aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 400
 
 測試結果：
 ```
+Finished [Summary] DELIVERY - Takes(s): 338.2, Count: 24, TPM: 4.3, Sum(ms): 47810, Avg(ms): 1992, 90th(ms): 4000, 99th(ms): 4000, 99.9th(ms): 4000 
+[Summary] NEW_ORDER - Takes(s): 356.3, Count: 258, TPM: 43.4, Sum(ms): 181665, Avg(ms): 704, 90th(ms): 1000, 99th(ms): 1500, 99.9th(ms): 1500 
+[Summary] NEW_ORDER_ERR - Takes(s): 356.3, Count: 1, TPM: 0.2, Sum(ms): 115, Avg(ms): 115, 90th(ms): 128, 99th(ms): 128, 99.9th(ms): 128 
+[Summary] ORDER_STATUS - Takes(s): 329.4, Count: 29, TPM: 5.3, Sum(ms): 1665, Avg(ms): 57, 90th(ms): 192, 99th(ms): 256, 99.9th(ms): 256 
+[Summary] PAYMENT - Takes(s): 358.8, Count: 225, TPM: 37.6, Sum(ms): 121556, Avg(ms): 540, 90th(ms): 1000, 99th(ms): 1000, 99.9th(ms): 1000 
+[Summary] STOCK_LEVEL - Takes(s): 357.7, Count: 25, TPM: 4.2, Sum(ms): 6453, Avg(ms): 258, 90th(ms): 1000, 99th(ms): 1500, 99.9th(ms): 1500 tpmC: 43.4
 ```
 #####   TiDB Query Summary 中的 qps 与 duration 
 ![enter image description here](https://lh3.googleusercontent.com/RklgNKcnOVa8HwyOv0MierDj2H4kwPiyFWukI3E1nTGymAYGoLtsaLVs8a78B3Awur5jjfdwsc8IVbkT5gy9voNstCBkYIy0b1pHmUkOWFLBmetw81nSwtbSs6Bwu1k6LaH7JyMos5clQI-46hOw9nSTZCMhkdit0O4vVFbjvTgR8iMMci3ZkWEAvSAFZoNZu4LChNbrcN3ZBwjhNbhRAOAoCV2wj370i0p4dwvNo-posbM3CxbUuEXj_yvUOcY3fOW_MNpx8Y4_1qk1xK7h19cAZ3-euq4NYFP1b7teWEgxeQpDulsyG9QhwoXhIcsqeNuI7rGUtQVDpn0AjBOcDxBAkNGX_G1LCb38bso-LNh59LxP8I-5e6--NsPli_Ysdz14_UTwBtw9Gbo8u_pFx9eHpAbDlQgB72Xs6QoT6Rl84RCWEFHcWVf4SiJPshbKIzMLkpLQbpYHOHns5u_cac4zo1CXV6TDLc4sxgequEO5L2ptgWa1YX84Nz-KgaZYFn71ucvzcroamEbsymxvWSKKsvrUBtTOCluZk2KH7VElgbeo6GWj23Pvf0dECneIlIhfxF6SqsTrChUgpWjjxeLC9m-6ixCFMqZJyGUB4lnXgfISl7nCSb0NxsAr4SEDZLY9ivaIC1WzDAwX9KTcbannVtxR3i-ll95QsBB8d9BTXUQntCqXwjpSNq3RBg=w1008-h276-no?authuser=0)
@@ -214,11 +220,11 @@ aiden@k8s-01:~$ go-tpc tpcc run --warehouses 10 -D tpcc -H 10.149.251.104 -P 400
  5. ycsb,sysbench](https://github.com/pingcap-incubator/tidb-in-action/blob/master/session4/chapter3/sysbench.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg3ODM5MTgsMTIyMzkwMTMwMCwtNT
-k3MTU0MzQ2LC01NjQxMTg3MjAsLTE1ODEwMjQ1NjYsLTExMDgz
-Mzk5NzIsMzM0Nzc5MTczLDIxMTUxNjM2MTEsLTU2MTQyMDEyNC
-wtNTE0Mzg2NjcxLDE0MjAzMDQ3MzEsLTEwNjcwMDk5NzcsODAz
-MzI0MjYyLC0xMDk2NjMyNjc5LC0xNDE4Nzg5Mjg0LDIxNDQ0MT
-EzMjMsLTE3NjE5MTkxODEsMTQyMTM3MDY2OCwtMTY2NTY1MDU0
-NSw5MTkzNjY1ODRdfQ==
+eyJoaXN0b3J5IjpbMTUyMTMxOTcyNSwxMjIzOTAxMzAwLC01OT
+cxNTQzNDYsLTU2NDExODcyMCwtMTU4MTAyNDU2NiwtMTEwODMz
+OTk3MiwzMzQ3NzkxNzMsMjExNTE2MzYxMSwtNTYxNDIwMTI0LC
+01MTQzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMz
+MjQyNjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMT
+MyMywtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1
+LDkxOTM2NjU4NF19
 -->
