@@ -124,10 +124,7 @@ Query OK, 0 rows affected (2.95 sec)
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/pingcap/go-tpc/master/install.sh | sh
 ```
-2. 啟動路徑設定
-```
 
-```
 
 
 ## 作業：測試報告
@@ -320,11 +317,11 @@ C --> D
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTQyMDEyNCwtNTE0Mzg2NjcxLDE0Mj
-AzMDQ3MzEsLTEwNjcwMDk5NzcsODAzMzI0MjYyLC0xMDk2NjMy
-Njc5LC0xNDE4Nzg5Mjg0LDIxNDQ0MTEzMjMsLTE3NjE5MTkxOD
-EsMTQyMTM3MDY2OCwtMTY2NTY1MDU0NSw5MTkzNjY1ODQsLTM4
-Nzc3NjQ1MiwxNzUzOTQ5MDg2LC0xMjQ1NTk4NDMsMjYzNjYxMT
-gxLDE1NTI3Mjc3OTUsLTE2NjQ3MDcxNTAsMTcxMjAyNTk1MSwx
-MjUxNzY0NTE3XX0=
+eyJoaXN0b3J5IjpbLTgwNjg3MTcyNywtNTYxNDIwMTI0LC01MT
+QzODY2NzEsMTQyMDMwNDczMSwtMTA2NzAwOTk3Nyw4MDMzMjQy
+NjIsLTEwOTY2MzI2NzksLTE0MTg3ODkyODQsMjE0NDQxMTMyMy
+wtMTc2MTkxOTE4MSwxNDIxMzcwNjY4LC0xNjY1NjUwNTQ1LDkx
+OTM2NjU4NCwtMzg3Nzc2NDUyLDE3NTM5NDkwODYsLTEyNDU1OT
+g0MywyNjM2NjExODEsMTU1MjcyNzc5NSwtMTY2NDcwNzE1MCwx
+NzEyMDI1OTUxXX0=
 -->
